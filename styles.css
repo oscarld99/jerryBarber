@@ -183,3 +183,19 @@ button:hover {
     display: none;
     /* Resto de estilos del modal */
 }
+
+
+/* Estilos para pantallas más pequeñas (como teléfonos) */
+@media (max-width: 768px) {
+    .banner {
+        padding: 0;
+    }
+    .image-border {
+        display: none; /* Ocultar la imagen del banner en pantallas pequeñas */
+    }
+
+    .banner h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        /* Otros estilos para el título en pantallas pequeñas */
+    }
+}
