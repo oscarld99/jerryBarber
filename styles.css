@@ -1,0 +1,185 @@
+/* Estilos para el encabezado */
+header {
+    background-image: url('./banner.jpeg');
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para la tabla */
+.table-container {
+    margin-top: 20px;    
+    margin-bottom: 20px;    
+
+}
+
+#appointments {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#appointments th,
+#appointments td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#appointments th {
+    background-color: #f2f2f2;
+}
+
+#appointments tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#appointments tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para el botón */
+#newAppointmentBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#newAppointmentBtn:hover {
+    background-color: #0056b3;
+}
+
+
+.modal-content {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+
+.modal-content {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: relative; /* Se agrega para el posicionamiento absoluto de la X */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Se cambia a la derecha */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.button-container {
+    text-align: right;
+}
+
+/* Para que los inputs ocupen todo el ancho pero respetando el padding lateral del form */
+input[type="time"],
+input[type="text"],
+select {
+    width: calc(100% - 20px); /* Restamos 20px por el padding del form */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el banner */
+.banner {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #333; /* Color de fondo de respaldo */
+    text-align: center;
+    color: #000;
+    padding: 70px 0px; /* Ajusta el espaciado superior e inferior según lo necesites */
+}
+
+.banner h1 {
+    font-family: 'Roboto Slab', serif; /* Selecciona una fuente de estilo de barbería */
+    font-size: 72px; /* Aumenta el tamaño del texto para que sea más llamativo */
+    color: 000; /* Color dorado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para dar profundidad */
+    letter-spacing: 2px; /* Espaciado entre letras para mayor legibilidad */
+    text-transform: uppercase; 
+    width: 100%;
+    text-align: center;
+
+    z-index: 2;
+    
+}
+.image-border {
+    position: absolute; /* Posición absoluta para superponer la imagen */
+    border-radius: 50%; /* Borde redondeado al 50% */
+    background-color: #c0c0c0;
+    border: 10px solid #c0c0c0; /* Borde transparente para empezar */
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5); /* Sombra con color dorado oscuro y brillo */
+
+    z-index: 2;
+}
+
+.image-border img {
+    width: 200px; /* Ajustar el ancho de la imagen para que ocupe todo el contenedor */
+    height: 200px;
+    border-radius: 50%; /* Borde redondeado al 50% */
+}
+
+.left {
+    position: absolute;
+    left: 15px;
+}
+
+.right {
+    position: absolute;
+    right: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255, 0.2); /* Color negro semitransparente */
+    z-index: 0.5;
+}
+
+#openFormBtn {
+    margin: 15px 0;
+}
+
+
+.modal {
+    display: none;
+    /* Resto de estilos del modal */
+}
