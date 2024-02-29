@@ -184,6 +184,15 @@ button:hover {
     /* Resto de estilos del modal */
 }
 
+.bottom {
+    display: none;
+    text-align: center;
+}
+
+.bottom img {
+    display: block; /* Hace que la imagen sea un bloque para aplicar márgenes automáticos */
+    margin: 0 auto; /* Margen automático horizontal para centrar la imagen */
+}
 
 /* Estilos para pantallas más pequeñas (como teléfonos) */
 @media (max-width: 768px) {
@@ -197,5 +206,9 @@ button:hover {
     .banner h1 {
         font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
         /* Otros estilos para el título en pantallas pequeñas */
+    }
+
+    .bottom {
+        display: block;
     }
 }
